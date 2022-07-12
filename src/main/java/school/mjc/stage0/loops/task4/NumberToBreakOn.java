@@ -8,6 +8,8 @@ public class NumberToBreakOn {
                 System.out.println("iterating till the end");
                 break;
             }
+            if(i == toBreakWith)
+                break;
         }
     }
 }

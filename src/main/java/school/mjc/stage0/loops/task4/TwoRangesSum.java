@@ -13,12 +13,13 @@ public class TwoRangesSum {
                 System.out.println("last number in row is negative");
                 break;
             }
-            else if(numberToSkip == i) {
-                index = i;
-                continue;
-            }
+            else if(numberToSkip == sum)
+                index = sum;
             sum += i;
         }
-        System.out.println("skipped sum is " + index + " counted sum is number " + sum);
+        if(sum > 0){
+            System.out.println("skipped sum is " + index);
+            System.out.println("counted sum is number " + (sum-index));
+        }
     }
 }
